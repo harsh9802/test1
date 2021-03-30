@@ -56,15 +56,19 @@
             <td align="center" colspan="2"><b> Vehicle VERIFICATION DETAILS</b></td>
         </tr>
         <tr>
-            <td>your Application id</td>
+            <td>your name is</td>
             <td>
-                {{id}}
+                {{name}}
             </td>
         </tr>
         <tr>
             <td>Verification date </td>
             <td>
-
+                <p id="demo"></p>
+                <script>
+                    var d = new Date();
+                    document.getElementById("demo").innerHTML = d;
+                </script>
             </td>
         </tr>
         <tr>
