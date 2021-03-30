@@ -50,4 +50,4 @@ class registration_table(models.Model):
     vehicle_category=models.CharField(max_length=7)
 
     def __str__(self):
-        return self.r_id + self.city
+        return self.name + self.city
