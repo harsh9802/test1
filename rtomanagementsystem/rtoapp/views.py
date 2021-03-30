@@ -50,7 +50,7 @@ def vehicle_status(request):
     cav=request.POST.get('cat_v')
     veh=registration_table(aadharNumber=a_num,name=nm,cov=c_ov,password=psd,model=mdl,city=cty,reg_issue_date=ri,reg_expiry_date=re,mail_id=email,Gender=gen,fuel_type=f_type,vehicle_category=cav)
     veh.save()
-    context={"City":cty,"id":id}
+    context={"City":cty,"name":nm}
     return render(request,'vehicle_status.html',context)
 def dl_view(request):
     return render(request,'DL.html')
